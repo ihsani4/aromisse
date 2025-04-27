@@ -3,127 +3,525 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aromisse - Parfume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aromisse - Parfume Ekskluzive</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            text-align: center;
-            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
         }
 
-        h1 {
-            color: #333;
+        header {
+            background-color: #d4a373;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
 
         .products {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
+            padding: 20px;
         }
 
         .product {
             background: white;
+            border: 1px solid #ddd;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            padding: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
         }
 
         .product img {
             width: 100%;
+            height: auto;
             border-radius: 10px;
         }
 
-        .product-name {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #555;
+        .product h3 {
+            color: #5c3d2e;
+        }
+
+        .product p {
+            color: #7c5e4a;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Mirë se erdhe te Aromisse 🌸</h1>
+    <header>
+        <h1>Aromisse - Parfume Ekskluzive</h1>
+    </header>
 
-    <div class="products">
+    <section class="products">
         <div class="product">
-            <img src="livre-ysl-intense.jpg" alt="Livre YSL Intense">
-            <div class="product-name">Livre YSL Intense 90ml</div>
+            <img src="images/livre-ysl-intense.jpg" alt="Livre YSL Intense 90ml">
+            <h3>Livre YSL Intense 90ml</h3>
+            <p>Çmimi: 120€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="prada-paradox-intense.jpg" alt="Prada Paradox Intense">
-            <div class="product-name">Prada Paradox Intense 50ml</div>
+            <img src="images/prada-paradoxe-intense.jpg" alt="Prada Paradoxe Intense 50ml">
+            <h3>Prada Paradoxe Intense 50ml</h3>
+            <p>Çmimi: 95€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="twilly-hermes-intense.jpg" alt="Twilly Hermes Intense">
-            <div class="product-name">Twilly Hermes Intense 50ml</div>
+            <img src="images/twilly-hermes.jpg" alt="Twilly d’Hermès Intense 50ml">
+            <h3>Twilly d’Hermès Intense 50ml</h3>
+            <p>Çmimi: 85€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="gucci-guilty.jpg" alt="Gucci Guilty">
-            <div class="product-name">Gucci Guilty 50ml</div>
+            <img src="images/gucci-guilty.jpg" alt="Gucci Guilty 50ml">
+            <h3>Gucci Guilty 50ml</h3>
+            <p>Çmimi: 90€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="la-belle-jean-paul-gaultier.jpg" alt="La Belle Jean Paul Gaultier">
-            <div class="product-name">La Belle Jean Paul Gaultier Intense</div>
+            <img src="images/la-belle-jean-paul-gaultier.jpg" alt="La Belle Jean Paul Gaultier Intense 50ml">
+            <h3>La Belle Jean Paul Gaultier Intense 50ml</h3>
+            <p>Çmimi: 95€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="black-opium-ysl.jpg" alt="Black Opium YSL">
-            <div class="product-name">Black Opium Yves Saint Laurent</div>
+            <img src="images/black-opium-ysl.jpg" alt="Black Opium YSL 50ml">
+            <h3>Black Opium YSL 50ml</h3>
+            <p>Çmimi: 110€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="voce-viva-valentino-intense.jpg" alt="Voce Viva Valentino Intense">
-            <div class="product-name">Voce Viva Valentino Intense 50ml</div>
+            <img src="images/voce-viva-valentino.jpg" alt="Voce Viva Valentino Intense 50ml">
+            <h3>Voce Viva Valentino Intense 50ml</h3>
+            <p>Çmimi: 100€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="love-dont-be-shy-kilian.jpg" alt="Love Don't Be Shy Kilian">
-            <div class="product-name">Love Don't Be Shy by Kilian</div>
+            <img src="images/love-dont-be-shy-kilian.jpg" alt="Love, Don't Be Shy by Kilian 50ml">
+            <h3>Love, Don't Be Shy by Kilian 50ml</h3>
+            <p>Çmimi: 150€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="miss-dior.jpg" alt="Miss Dior">
-            <div class="product-name">Miss Dior</div>
+            <img src="images/miss-dior.jpg" alt="Miss Dior 50ml">
+            <h3>Miss Dior 50ml</h3>
+            <p>Çmimi: 95€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
         <div class="product">
-            <img src="valentino-donna.jpg" alt="Valentino Donna">
-            <div class="product-name">Valentino Donna</div>
+            <img src="images/valentino-donna.jpg" alt="Valentino Donna 50ml">
+            <h3>Valentino Donna 50ml</h3>
+            <p>Çmimi: 120€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="my-burberry.jpg" alt="My Burberry">
-            <div class="product-name">My Burberry</div>
+            <img src="images/my-burberry-blush.jpg" alt="My Burberry Blush 50ml">
+            <h3>My Burberry Blush 50ml</h3>
+            <p>Çmimi: 95€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="my-burberry-blush.jpg" alt="My Burberry Blush">
-            <div class="product-name">My Burberry Blush</div>
+            <img src="images/goddess-burberry.jpg" alt="Goddess Burberry 50ml">
+            <h3>Goddess Burberry 50ml</h3>
+            <p>Çmimi: 100€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="goddess-burberry.jpg" alt="Goddess Burberry">
-            <div class="product-name">Goddess Burberry</div>
+            <img src="images/si-passione-giorgio-armani.jpg" alt="Si Passione by Giorgio Armani 50ml">
+            <h3>Si Passione by Giorgio Armani 50ml</h3>
+            <p>Çmimi: 115€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="si-passione-giorgio-armani.jpg" alt="Si Passione Giorgio Armani">
-            <div class="product-name">Si Passione Giorgio Armani</div>
+            <img src="images/la-vie-est-belle-lancome.jpg" alt="La Vie Est Belle by Lancôme 50ml">
+            <h3>La Vie Est Belle by Lancôme 50ml</h3>
+            <p>Çmimi: 125€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="la-vie-est-belle-lancome.jpg" alt="La Vie Est Belle Lancome">
-            <div class="product-name">La Vie Est Belle Lancome</div>
+            <img src="images/scandal-jean-paul-gaultier.jpg" alt="Scandal by Jean Paul Gaultier 50ml">
+            <h3>Scandal by Jean Paul Gaultier 50ml</h3>
+            <p>Çmimi: 130€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
         <div class="product">
-            <img src="scandal-jean-paul-gaultier.jpg" alt="Scandal Jean Paul Gaultier">
-            <div class="product-name">Scandal Jean Paul Gaultier</div>
+            <img src="images/rouge-battara.jpg" alt="Rouge Battara 50ml">
+            <h3>Rouge Battara 50ml</h3>
+            <p>Çmimi: 95€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+            <p id="message"></p>
         </div>
+
+        <script>
+            document.getElementById('orderForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+            });
+        </script>
+
+
+
         <div class="product">
-            <img src="rouge-battara.jpg" alt="Rouge Battara">
-            <div class="product-name">Rouge Battara</div>
-        </div>
-        <div class="product">
-            <img src="sauvage-elixir.jpg" alt="Sauvage Elixir">
-            <div class="product-name">Sauvage Elixir</div>
-        </div>
-    </div>
+            <img src="images/sauvage-elixir.jpg" alt="Dior Sauvage Elixir 60ml">
+            <h3>Dior Sauvage Elixir 60ml</h3>
+            <p>Çmimi: 125€</p>
+        </div><!-- Formulari "Na shkruani" poshtë fotos -->
+        <div class="order-form">
+            <h2>Na shkruani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form>
+
+
+            });
+            </script>
+
+
+            <!-- Formulari "Na shkruani" poshtë fotos -->
+            <div class="order-form">
+                <h2>Na shkruani</h2>
+                <form id="orderForm">
+                    <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                    <button type="submit">Dërgo Porosinë</button>
+                </form>
+
+                <p id="message"></p>
+            </div>
+
+            <script>
+                document.getElementById('orderForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+                });
+            </script>
+
+
+            <h2>Porosit tani</h2>
+            <form id="orderForm">
+                <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                <button type="submit">Dërgo Porosinë</button>
+            </form><!-- Formulari "Na shkruani" poshtë fotos -->
+            <div class="order-form">
+                <h2>Na shkruani</h2>
+                <form id="orderForm">
+                    <input type="text" id="name" name="name" placeholder="Emri i plotë" required><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Numri i telefonit" required><br>
+                    <button type="submit">Dërgo Porosinë</button>
+                </form>
+
+                <p id="message"></p>
+            </div>
+
+            <script>
+                document.getElementById('orderForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+                });
+            </script>
+
+
+            <p id="message" style="color:green; font-weight:bold; margin-top:20px;"></p>
+
+            <script>
+                document.getElementById('orderForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    document.getElementById('message').innerText = "✅ Porosia u dërgua me sukses! Do t'ju kontaktojmë.";
+                });
+            </script>
+    </section>
 
 </body>
 
